@@ -24,7 +24,7 @@ const Hero = () => (
       </div>
       <div className="h-auto">
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      Transforming Waste<br/> Empowering Communities Shaping Tomorrow
+      Transforming Waste<br/> Empowering Communities <br/>Shaping Tomorrow
       </p>
       </div>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
