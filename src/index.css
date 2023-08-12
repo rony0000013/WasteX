@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -1600,6 +1602,10 @@ html{
   margin-bottom: 0.75rem;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -1753,6 +1759,10 @@ html{
   height: 50%;
 }
 
+.h-\[50px\]{
+  height: 50px;
+}
+
 .h-\[64px\]{
   height: 64px;
 }
@@ -1795,6 +1805,10 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[150px\]{
+  width: 150px;
 }
 
 .min-w-\[140px\]{
@@ -1901,6 +1915,10 @@ html{
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border-t-\[1px\]{

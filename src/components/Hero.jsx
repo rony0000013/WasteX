@@ -23,7 +23,7 @@ const Hero = () => (
         </h1>
       </div>
       <div className="h-auto">
-      <p className={`${styles.paragraph} font-acme max-w-[470px] mt-5`}>
+      <p className=" font-acme max-w-[470px] mt-5">
       Transforming Waste<br/> Empowering Communities <br/>Shaping Tomorrow
       </p>
       </div>
