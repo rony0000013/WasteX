@@ -10,36 +10,23 @@ const Hero = () => (
     >
       <div className="flex flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
-          The Next <br className="sm:block hidden" />
-          {/* <Typewriter>
-            <span className="text-gradient">Generation</span>{"\n"}
-            </Typewriter> */}
           <Typewriter
             options={{
-              strings: ['<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Generation</span>'],
+              strings: [
+                'The Next <span><br/></span><span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Generation</span> <span><br/></span><span -webkit-background-clip: text; color: transparent;">Waste</span><span><br/></span><span style="font-size :42px"-webkit-background-clip: text; color: transparent;">Management</span>',
+            ],
               autoStart: true,
-              loop: true,
+              loop:true,
+              delay:100,
             }}
-          />
+          /> <br className="sm:block hidden" />
         </h1>
       </div>
-      <h1 className="font-poppins font-semibold ss:text-[68px] text-[42px] text-white ss:leading-[100.8px] leading-[60px] w-full">
-        Waste Management
-      </h1>
+      <div className="h-auto">
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      <Typewriter
-        options={{
-          strings: [
-            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Transforming Waste</span>',
-            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Empowering Communities</span>',
-            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Shaping Tomorrow</span>',
-
-        ],
-          autoStart: true,
-          loop: true,
-        }}
-      />
+      Transforming Waste<br/> Empowering Communities Shaping Tomorrow
       </p>
+      </div>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
         <button className="btn btn-active btn-success">AI Help</button>
         <div className="ml-4">
@@ -56,8 +43,6 @@ const Hero = () => (
     </div>
 
     <div className={`ss:hidden ${styles.flexCenter}`}>
-      {/* <GetStarted /> */}
-      {/* <GetStarted /> */}
       <button className="btn btn-active btn-success">AI Help</button>
       <div className="ml-4">
         <button className="btn btn-active btn-success">Get Started</button>

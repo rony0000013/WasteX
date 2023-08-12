@@ -1598,6 +1598,10 @@ html{
   margin-bottom: 0.75rem;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -1755,16 +1759,8 @@ html{
   height: 64px;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[80\]{
-  height: 80;
-}
-
-.h-\[80vh\]{
-  height: 80vh;
+.h-auto{
+  height: auto;
 }
 
 .min-h-screen{
@@ -2010,12 +2006,12 @@ html{
   font-size: 40px;
 }
 
-.text-\[42px\]{
-  font-size: 42px;
-}
-
 .text-\[52px\]{
   font-size: 52px;
+}
+
+.text-\[42px\]{
+  font-size: 42px;
 }
 
 .font-medium{
@@ -2046,36 +2042,12 @@ html{
   line-height: 30.8px;
 }
 
-.leading-\[66\.8px\]{
-  line-height: 66.8px;
-}
-
-.leading-\[70px\]{
-  line-height: 70px;
-}
-
-.leading-\[75px\]{
-  line-height: 75px;
-}
-
-.leading-\[7px\]{
-  line-height: 7px;
-}
-
-.leading-\[6px\]{
-  line-height: 6px;
-}
-
-.leading-\[65px\]{
-  line-height: 65px;
-}
-
-.leading-\[px\]{
-  line-height: px;
-}
-
 .leading-\[60px\]{
   line-height: 60px;
+}
+
+.leading-\[66\.8px\]{
+  line-height: 66.8px;
 }
 
 .text-dimWhite{
@@ -2244,12 +2216,12 @@ html{
     display: none;
   }
 
-  .ss\:text-\[68px\]{
-    font-size: 68px;
-  }
-
   .ss\:text-\[72px\]{
     font-size: 72px;
+  }
+
+  .ss\:text-\[68px\]{
+    font-size: 68px;
   }
 
   .ss\:leading-\[100\.8px\]{
