@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full h-20 flex py-6 justify-between items-center navbar">
-        <div>
-          <img src={logo} alt="hoobank" className="w-[150px] h-[150px] " />
+        <div className="relative">
+          <img src={logo} alt="WasteX" className=" w-[130px] h-[120px] object-fit" />
         </div>
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
           <li

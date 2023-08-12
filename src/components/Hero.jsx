@@ -9,11 +9,11 @@ const Hero = () => (
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px -6`}
     >
       <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
+        <h1 className="flex-1 font-acme font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
           <Typewriter
             options={{
               strings: [
-                'The Next <span><br/></span><span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Generation</span> <span><br/></span><span -webkit-background-clip: text; color: transparent;">Waste</span><span><br/></span><span style="font-size :42px"-webkit-background-clip: text; color: transparent;">Management</span>',
+                'The Next <span><br/></span><span style="font-size :42px;background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">G e n e r a t i o n</span> <span><br/></span><span style="font-size :42px" -webkit-background-clip: text; color: transparent;">Waste</span><span><br/></span><span style="font-size :42px"-webkit-background-clip: text; color: transparent;">Management</span>',
             ],
               autoStart: true,
               loop:true,
@@ -23,7 +23,7 @@ const Hero = () => (
         </h1>
       </div>
       <div className="h-auto">
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph} font-acme max-w-[470px] mt-5`}>
       Transforming Waste<br/> Empowering Communities <br/>Shaping Tomorrow
       </p>
       </div>
