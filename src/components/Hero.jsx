@@ -1,33 +1,44 @@
 import styles from "../style";
-import { FaChevronCircleRight } from "react-icons/fa";
 import { discount, robot } from "../assets";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => (
   <section className={`flex md:flex-row flex-col p-2 ${styles.paddingY}`}>
     <div
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px -6`}
     >
-      {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-        <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-        <p className={`${styles.paragraph} ml-2`}>
-          <span className='text-white'>20%</span> Discount For {" "}
-          <span className='text-white'>1 Month</span> Account
-        </p>
-      </div> */}
-
       <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
           The Next <br className="sm:block hidden" />
-          <span className="text-gradient">Generation</span>{"\n"}
+          {/* <Typewriter>
+            <span className="text-gradient">Generation</span>{"\n"}
+            </Typewriter> */}
+          <Typewriter
+            options={{
+              strings: ['<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Generation</span>'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
       </div>
-      <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+      <h1 className="font-poppins font-semibold ss:text-[68px] text-[42px] text-white ss:leading-[100.8px] leading-[60px] w-full">
         Waste Management
       </h1>
-
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Transforming Waste, Empowering Communities, Shaping Tomorrow
+      <Typewriter
+        options={{
+          strings: [
+            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Transforming Waste</span>',
+            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Empowering Communities</span>',
+            '<span style="background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">Shaping Tomorrow</span>',
+
+        ],
+          autoStart: true,
+          loop: true,
+        }}
+      />
       </p>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
         <button className="btn btn-active btn-success">AI Help</button>

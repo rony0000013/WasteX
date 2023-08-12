@@ -1659,10 +1659,6 @@ html{
   margin-bottom: 2.5rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -1677,10 +1673,6 @@ html{
 
 .ml-0{
   margin-left: 0px;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
 }
 
 .ml-3{
@@ -1755,10 +1747,6 @@ html{
   height: 28px;
 }
 
-.h-\[32px\]{
-  height: 32px;
-}
-
 .h-\[50\%\]{
   height: 50%;
 }
@@ -1805,10 +1793,6 @@ html{
 
 .w-\[28px\]{
   width: 28px;
-}
-
-.w-\[32px\]{
-  width: 32px;
 }
 
 .w-\[50\%\]{
@@ -1921,10 +1905,6 @@ html{
   white-space: nowrap;
 }
 
-.rounded-\[10px\]{
-  border-radius: 10px;
-}
-
 .rounded-\[20px\]{
   border-radius: 20px;
 }
@@ -1987,11 +1967,6 @@ html{
   padding: 1.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2005,11 +1980,6 @@ html{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-\[6px\]{
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .pt-6{
@@ -2038,6 +2008,10 @@ html{
 
 .text-\[40px\]{
   font-size: 40px;
+}
+
+.text-\[42px\]{
+  font-size: 42px;
 }
 
 .text-\[52px\]{
@@ -2076,8 +2050,32 @@ html{
   line-height: 66.8px;
 }
 
+.leading-\[70px\]{
+  line-height: 70px;
+}
+
 .leading-\[75px\]{
   line-height: 75px;
+}
+
+.leading-\[7px\]{
+  line-height: 7px;
+}
+
+.leading-\[6px\]{
+  line-height: 6px;
+}
+
+.leading-\[65px\]{
+  line-height: 65px;
+}
+
+.leading-\[px\]{
+  line-height: px;
+}
+
+.leading-\[60px\]{
+  line-height: 60px;
 }
 
 .text-dimWhite{

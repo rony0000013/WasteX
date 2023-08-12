@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className="w-full h-20 flex py-6 justify-between items-center navbar">
         <div>
-          <img src={logo} alt="hoobank" className="w-[150px] h-[150px]" />
+          <img src={logo} alt="hoobank" className="w-[150px] h-[150px] " />
         </div>
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
           <li
