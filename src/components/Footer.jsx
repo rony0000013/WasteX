@@ -9,16 +9,19 @@ const Footer = () => (
         <img
           src={logo}
           alt="hoobank"
-          className="w-[266px] h-[72px] object-contain"
+          className="w-[266px] h-[124px] object-contain"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-          A new way to make the payments easy, reliable and secure.
+          Charting Unconventional Routes Towards Sustainable Progress.
         </p>
       </div>
 
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <div
+            key={footerlink.title}
+            className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}
+          >
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
               {footerlink.title}
             </h4>
@@ -61,4 +64,4 @@ const Footer = () => (
   </section>
 );
 
-export default Footer
+export default Footer;
