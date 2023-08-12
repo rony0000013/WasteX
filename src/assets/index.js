@@ -1,6 +1,5 @@
-
 import logo from "./W_a_s_t_e-X.png";
-import robot from "./robot.png";
+import robot from "./environment.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
