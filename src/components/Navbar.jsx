@@ -7,9 +7,11 @@ const Navbar = () => {
   const [toggle, settoggle] = useState(false)
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
+    <>
+    <nav className="w-full h-20 flex py-6 justify-between items-center navbar">
+      <div>
+        <img src={logo} alt="hoobank" className="w-[124px] h-[124px]" />
+      </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li key='home' className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white `} >
           <a href='#home'>
@@ -51,6 +53,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </>
   )
 }
 

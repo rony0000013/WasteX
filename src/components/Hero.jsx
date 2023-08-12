@@ -19,17 +19,15 @@ const Hero = () => (
           <span className='text-gradient'>Generation</span> {" "}
         </h1>
       </div>
-      <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full'>Payment Method</h1> 
+      <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full'>Waste Management</h1> 
 
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.</p>
+      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Transforming Waste, Empowering Communities, Shaping Tomorrow</p>
           <div className='ss:flex hidden md:mr-4 mr-0 mt-4'>
           {/* <GetStarted /> */}
           <button className="btn btn-active btn-secondary"> 
-          Secondary</button>
+          AI Help</button>
           <div className="ml-4">
-            <button className="btn btn-active btn-primary">Primary</button>
+            <button className="btn btn-active btn-primary">Get Started</button>
           </div>
         </div>
     </div>
@@ -44,9 +42,9 @@ const Hero = () => (
     <div className={`ss:hidden ${styles.flexCenter}`}>
       {/* <GetStarted /> */}
           {/* <GetStarted /> */}
-          <button className="btn btn-active btn-secondary">Secondary</button>
+          <button className="btn btn-active btn-secondary">AI Help</button>
           <div className="ml-4">
-            <button className="btn btn-active btn-primary">Primary</button>
+            <button className="btn btn-active btn-primary">Get Started</button>
           </div>
     </div>
   </section>

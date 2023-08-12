@@ -1,5 +1,5 @@
 
-import logo from "./logo.svg";
+import logo from "./W_a_s_t_e-X.png";
 import robot from "./robot.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
