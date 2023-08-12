@@ -1,6 +1,5 @@
-import Billing from "./Billing";
+
 import Business from "./Business";
-import CardDeal from "./CardDeal";
 import CTA from "./CTA";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -12,8 +11,6 @@ export {
     Hero,
     Footer,
     CTA,
-    CardDeal,
-    Billing,
     Business,
     Showcase,
 };

@@ -9,7 +9,7 @@ import { useStore } from "@nanostores/react"
 
 const Showcase = block(() => {
     // const blogs = useStore(blogs);
-    console.log(blogs)
+    //console.log(blogs)
 
     return (<div className="flex ">
         {/* <For each={}/> */}
