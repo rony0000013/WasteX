@@ -5,6 +5,7 @@ import './index.css'
 import { Auth0Provider } from '@auth0/auth0-react'
 import Blog from './components/Blog.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CamPage from './components/CamPage.jsx'
 const router = createBrowserRouter([
   {
       path: '/',
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: '/blog',
     element:<Blog />
+  },
+  {
+    path: '/chat',
+    element:<iframe src="https://wastex-chat.streamlit.app/?embed_options=dark_theme,show_colored_line,show_footer"></iframe>
+  },
+  {
+    path: '/camera',
+    element:<CamPage/>
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { block } from "million/react"
+import ReactMarkdown from 'react-markdown'
 
 
 const Card = ({img, title, text}) => {
@@ -8,12 +8,12 @@ const Card = ({img, title, text}) => {
 
     return (
         <>
-            <div className="card sm:w-[80vw] w-full bg-base-100 shadow-xl relative">
+            <div className="card sm:w-[80vw] w-full bg-gray-800 shadow-xl relative">
                 <figure><img src={img} alt="Waste" className="h-[150px]" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
-                    <p className={!isShowMore ? 'truncate' : ''}>{text}</p>
-                    <button onClick={() => setIsShowMore(!isShowMore)} className="btn btn-primary">
+                    <h2 className="card-title"><ReactMarkdown>{title}</ReactMarkdown></h2>
+                    <p className={!isShowMore ? 'truncate' : ''}><ReactMarkdown>{text}</ReactMarkdown></p>
+                    <button onClick={() => setIsShowMore(!isShowMore)} className="btn btn-active btn-success">
                         {isShowMore ? "Read Less" : "Read More"}
                     </button>
                 </div>

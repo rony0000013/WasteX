@@ -4,7 +4,8 @@ import CTA from "./CTA";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import Showcase from "./Showcase";
+import CameraComp from "./Camera";
+import CamPage from "./CamPage";
 
 export {
     Navbar,
@@ -12,7 +13,8 @@ export {
     Footer,
     CTA,
     Business,
-    Showcase,
+    CameraComp,
+    CamPage,
 };
 
 

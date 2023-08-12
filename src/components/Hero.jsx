@@ -30,7 +30,6 @@ const Hero = () => (
         Transforming Waste, Empowering Communities, Shaping Tomorrow
       </p>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
-        {/* <GetStarted /> */}
         <button className="btn btn-active btn-success">AI Help</button>
         <div className="ml-4">
           <button className="btn btn-active btn-success">Get Started</button>

@@ -724,6 +724,15 @@ html{
   color: hsl(var(--nc) / var(--tw-text-opacity));
 }
 
+.chat{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 @media (hover: hover){
   .btn:hover{
     --tw-border-opacity: 1;
@@ -1331,6 +1340,42 @@ html{
   margin-top: 0;
 }
 
+.mockup-phone .camera{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  height: 25px;
+  width: 150px;
+  margin: 0 auto;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  z-index: 11;
+}
+
+.mockup-phone .camera:before{
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 50px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #0c0b0e;
+  transform: translate(-50%, -50%);
+}
+
+.mockup-phone .camera:after{
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #0f0b25;
+}
+
 @keyframes modal-pop{
   0%{
     opacity: 0;
@@ -1722,6 +1767,18 @@ html{
   height: 64px;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[80\]{
+  height: 80;
+}
+
+.h-\[80vh\]{
+  height: 80vh;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1764,6 +1821,10 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[80vw\]{
+  width: 80vw;
 }
 
 .min-w-\[140px\]{
@@ -1885,9 +1946,9 @@ html{
   border-top-color: rgb(63 62 69 / var(--tw-border-opacity));
 }
 
-.bg-base-100{
+.bg-base-200{
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+  background-color: hsl(var(--b2) / var(--tw-bg-opacity));
 }
 
 .bg-dimBlue{
@@ -1897,6 +1958,16 @@ html{
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(0 4 15 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .object-contain{

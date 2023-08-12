@@ -1,6 +1,6 @@
 import styles from './style';
 
-import {Navbar, Hero, Footer, CTA, Showcase} from './components';
+import {Navbar, Hero, Footer, CTA, CameraComp} from './components';
 import LoginButton from './auth/LoginButton';
 
 
@@ -21,10 +21,8 @@ const Home = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        {/* <Business />
-        <Billing />
-        <CardDeal /> */}
-        <Showcase />
+
+        {/* <CameraComp /> */}
         <CTA />
         <Footer />
       </div>
