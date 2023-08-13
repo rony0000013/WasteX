@@ -3,6 +3,7 @@ import { discount, robot } from "../assets";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import Typewriter from 'typewriter-effect';
 
+import { Link } from "react-router-dom";
 const Hero = () => (
   <section className={`flex md:flex-row flex-col p-2 ${styles.paddingY}`}>
     <div
@@ -28,9 +29,9 @@ const Hero = () => (
       </p>
       </div>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
-        <a href="/chat"><button className="btn btn-active btn-success" >AI Help</button></a>
+        <Link to="/chat"><button className="btn btn-active btn-success" >AI Help</button></Link>
         <div className="ml-4">
-        <a href="/camera"><button className="btn btn-active btn-success">Get Started</button></a>
+        <Link to="/camera"><button className="btn btn-active btn-success">Get Started</button></Link>
         </div>
       </div>
     </div>
@@ -43,9 +44,9 @@ const Hero = () => (
     </div>
 
     <div className={`ss:hidden ${styles.flexCenter}`}>
-    <a href="/chat"><button className="btn btn-active btn-success">AI Help</button></a>
+    <Link to="/chat"><button className="btn btn-active btn-success">AI Help</button></Link>
       <div className="ml-4">
-      <a href="/camera"><button className="btn btn-active btn-success">Get Started</button></a>
+      <Link to="/camera"><button className="btn btn-active btn-success">Get Started</button></Link>
       </div>
     </div>
   </section>
