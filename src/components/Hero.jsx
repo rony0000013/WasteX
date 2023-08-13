@@ -1,34 +1,32 @@
 import styles from "../style";
-import { FaChevronCircleRight } from "react-icons/fa";
 import { discount, robot } from "../assets";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => (
   <section className={`flex md:flex-row flex-col p-2 ${styles.paddingY}`}>
     <div
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px -6`}
     >
-      {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-        <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-        <p className={`${styles.paragraph} ml-2`}>
-          <span className='text-white'>20%</span> Discount For {" "}
-          <span className='text-white'>1 Month</span> Account
-        </p>
-      </div> */}
-
       <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-          The Next <br className="sm:block hidden" />
-          <span className="text-gradient">Generation</span>{"\n"}
+        <h1 className="flex-1 font-acme font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
+          <Typewriter
+            options={{
+              strings: [
+                'The Next <span><br/></span><span style="font-size :42px;background-image: linear-gradient(to right, #56ab2f, #a8e063); -webkit-background-clip: text; color: transparent;">G e n e r a t i o n</span> <span><br/></span><span style="font-size :42px" -webkit-background-clip: text; color: transparent;">Waste</span><span><br/></span><span style="font-size :42px"-webkit-background-clip: text; color: transparent;">Management</span>',
+            ],
+              autoStart: true,
+              loop:true,
+              delay:100,
+            }}
+          /> <br className="sm:block hidden" />
         </h1>
       </div>
-      <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-        Waste Management
-      </h1>
-
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Transforming Waste, Empowering Communities, Shaping Tomorrow
+      <div className="h-auto">
+      <p className=" font-acme max-w-[470px] mt-5">
+      Transforming Waste<br/> Empowering Communities <br/>Shaping Tomorrow
       </p>
+      </div>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
         <button className="btn btn-active btn-success">AI Help</button>
         <div className="ml-4">
@@ -45,8 +43,6 @@ const Hero = () => (
     </div>
 
     <div className={`ss:hidden ${styles.flexCenter}`}>
-      {/* <GetStarted /> */}
-      {/* <GetStarted /> */}
       <button className="btn btn-active btn-success">AI Help</button>
       <div className="ml-4">
         <button className="btn btn-active btn-success">Get Started</button>

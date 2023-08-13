@@ -13,6 +13,8 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        tektur: ["Tektur","sans-serif"],
+        acme: ["Acme","sans-serif"],
       },
       boxShadow: {
         woke: "0px 9.9px 21.6px rgba(9, 151, 124, 0.41)",

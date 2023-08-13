@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full h-20 flex py-6 justify-between items-center navbar">
-        <div>
-          <img src={logo} alt="hoobank" className="w-[150px] h-[150px]" />
+        <div className="relative">
+          <img src={logo} alt="WasteX" className=" w-[130px] h-[120px] object-fit" />
         </div>
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
           <li
@@ -26,12 +26,21 @@ const Navbar = () => {
           </li>
           <li
             key="blog"
-            className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
+            className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white `}
             onClick={() => {
               window.location.href = "/blog";
             }}
           >
             Blog
+          </li>
+          <li
+            key="Log In"
+            className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          >
+            Log In
           </li>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -43,9 +52,8 @@ const Navbar = () => {
           />
 
           <div
-            className={`${
-              toggle ? "flex" : "hidden"
-            } p-6 bg-black-gradient top-20 absolute right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
+            className={`${toggle ? "flex" : "hidden"
+              } p-6 bg-black-gradient top-20 absolute right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
           >
             <ul className="list-none flex flex-col justify-end items-start flex-1">
               <li
@@ -62,9 +70,21 @@ const Navbar = () => {
               </li>
               <li
                 key="blog"
-                className={`font-poppins font-normal cursor-pointer text-[16px] mb-0 text-white `}
+                className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white `}
+                onClick={() => {
+                  window.location.href = "/blog";
+                }}
               >
-                <a href="#blog">Blog</a>
+                Blog
+              </li>
+              <li
+                key="blog"
+                className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
+                onClick={() => {
+                  window.location.href = "/";
+                }}
+              >
+                Log In
               </li>
             </ul>
           </div>
