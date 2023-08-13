@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -28,7 +30,7 @@ const Navbar = () => {
             key="blog"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white `}
             onClick={() => {
-              window.location.href = "/blog";
+              navigate("/blog");
             }}
           >
             Blog
@@ -37,7 +39,7 @@ const Navbar = () => {
             key="Log In"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
             onClick={() => {
-              window.location.href = "/";
+              <Redirect to="/blog"></Redirect>
             }}
           >
             Log In
