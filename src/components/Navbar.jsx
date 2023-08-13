@@ -34,7 +34,7 @@ const Navbar = () => {
             Blog
           </li>
           <li
-            key="blog"
+            key="Log In"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
             onClick={() => {
               window.location.href = "/";
@@ -71,8 +71,11 @@ const Navbar = () => {
               <li
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white `}
+                onClick={() => {
+                  window.location.href = "/blog";
+                }}
               >
-                <a href="#blog">Blog</a>
+                Blog
               </li>
               <li
                 key="blog"

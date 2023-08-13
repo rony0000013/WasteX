@@ -17,7 +17,7 @@ export default function Blog() {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        axios.get(import.meta.env.VITE_BACKEND_API+"/blog/").then((res) => {
+        axios.get(import.meta.env.VITE_BACKEND_API+"/blogs").then((res) => {
             setBlogs(res.data.blogs);
             console.log(res.data.blogs)
         }).catch((err) => {
