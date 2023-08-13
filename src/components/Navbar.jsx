@@ -2,10 +2,12 @@ import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
 import { useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
   const navigate = useNavigate();
+  const { loginWithRedirect } = useAuth0();
 
   return (
     <>
@@ -36,7 +38,7 @@ const Navbar = () => {
             key="Log In"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
             onClick={() => {
-              <Redirect to="/blog"></Redirect>
+              loginWithRedirect()
             }}
           >
             Log In
@@ -77,7 +79,7 @@ const Navbar = () => {
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
                 onClick={() => {
-                  window.location.href = "/";
+                  loginWithRedirect()
                 }}
               >
                 Log In
