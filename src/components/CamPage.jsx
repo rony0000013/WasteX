@@ -9,6 +9,7 @@ const CamPage = () => {
     const [image, setImage] = useState(null);
     const [location, setLocation] = useState({lat: 22.597999572753906,
         long: 88.37699890136719});
+    const [ans, setAns] = useState("");
 
     const [error, setError] = useState(null);
 
@@ -80,9 +81,14 @@ const CamPage = () => {
             })
             .then((res) => {
               console.log(res.data);
+              if (res.data.result === true){
+                setAns(() => "Successfully Inforemed")
+              }
+
             })
             .catch((err) => {
               console.log(err);
+              setAns("Error Occured")
             });
         }
       };
@@ -92,7 +98,13 @@ const CamPage = () => {
       }
 
     return (
-        <div className="flex bg-primary min-h-screen align-middle justify-center pt-10">
+        <>
+        <div className='align-middle flex flex-wrap justify-center gap-4 bg-primary'>
+            <a className="Btn" to={"/"}><button className='btn btn-success '>
+                Go back to home
+        </button></a>
+        </div>
+        <div className="flex bg-primary min-h-screen align-middle justify-center ">
             <div className="flex flex-col align-middle justify-center gap-3 px-2 ">
             <Webcam height={600} width={600} ref={camera} screenshotFormat="image/jpeg" />
             {/* <button onClick={captureImage} className="btn btn-primary">Take photo</button> */}
@@ -102,7 +114,9 @@ const CamPage = () => {
                 Upload photo
             </button>
         </div>
+        <h1>{ans}</h1>
         </div>
+        </>
     );
 }
 

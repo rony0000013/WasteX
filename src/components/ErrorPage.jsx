@@ -6,7 +6,7 @@ const ErrorPage = () => {
   const error = useRouteError();
 
   return (
-    <div className="ErrorPage">
+    <div className="ErrorPage bg-primary">
       <h1>Oops! Something went wrong</h1>
       <img className="Image" src={img} alt="404" />
       <p>Sorry, an unexpected error has occurred.</p>
