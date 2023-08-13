@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
@@ -28,12 +29,12 @@ const Navbar = () => {
           >
             <a href="#features">Features</a>
           </li>
-          <a href="/blog"><li
+          <Link to="/blog"><li
             key="blog"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white `}
           >
             Blog
-          </li></a>
+          </li></Link>
           <li
             key="Log In"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
@@ -69,12 +70,12 @@ const Navbar = () => {
               >
                 <a href="#features">Features</a>
               </li>
-              <a href="/blog"><li
+              <Link to="/blog"><li
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white `}
               >
                 Blog
-              </li></a>
+              </li></Link>
               <li
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}

@@ -10,6 +10,7 @@ const wastes = [waste1, waste2, waste3, waste4, waste5, waste6]
 
 import { For, block } from "million/react"
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 
@@ -29,9 +30,9 @@ export default function Blog() {
     return (
         <>
         <div className='align-middle flex flex-wrap justify-center gap-4 bg-primary'>
-            <a className="Btn" href="/"><button className='btn btn-success '>
+            <Link className="Btn" to="/"><button className='btn btn-success '>
                 Go back to home
-        </button></a>
+        </button></Link>
         </div>
             <div className="bg-primary flex flex-wrap align-middle w-[100vw]  p-4 justify-center gap-4">
                <For each={blogs}>

@@ -2,6 +2,7 @@
 import Webcam from "react-webcam";
 import { useState, useRef, useCallback, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 const CamPage = () => {
@@ -55,9 +56,13 @@ const CamPage = () => {
               })
               .then((res) => {
                 console.log(res.data);
+                if (res.data.result === true){
+                    setAns(() => "Successfully Inforemed")
+                  }
               })
               .catch((err) => {
                 console.log(err);
+                setAns("Error Occured")
               });
         }
       }
@@ -81,14 +86,12 @@ const CamPage = () => {
             })
             .then((res) => {
               console.log(res.data);
-              if (res.data.result === true){
-                setAns(() => "Successfully Inforemed")
-              }
+              
 
             })
             .catch((err) => {
               console.log(err);
-              setAns("Error Occured")
+              
             });
         }
       };
@@ -100,9 +103,9 @@ const CamPage = () => {
     return (
         <>
         <div className='align-middle flex flex-wrap justify-center gap-4 bg-primary'>
-            <a className="Btn" to={"/"}><button className='btn btn-success '>
+            <Link className="Btn" to={"/"}><button className='btn btn-success '>
                 Go back to home
-        </button></a>
+        </button></Link>
         </div>
         <div className="flex bg-primary min-h-screen align-middle justify-center ">
             <div className="flex flex-col align-middle justify-center gap-3 px-2 ">
@@ -113,8 +116,8 @@ const CamPage = () => {
             <button onClick={uploadImage} className="btn btn-success">
                 Upload photo
             </button>
+            <h1 className="text-3xl text-green-700">{ans}</h1>
         </div>
-        <h1>{ans}</h1>
         </div>
         </>
     );
