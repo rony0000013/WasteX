@@ -5,7 +5,7 @@ import './index.css'
 import ErrorPage from './components/ErrorPage.jsx'
 import { Auth0Provider } from '@auth0/auth0-react'
 import Blog from './components/Blog.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Routes, Route } from 'react-router-dom';
 import CamPage from './components/CamPage.jsx'
 const router = createBrowserRouter([
   {
@@ -49,7 +49,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       redirect_uri: window.location.origin
     }}
   >
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} errorElement={<ErrorPage />} />
+        <Route path="/admin" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
     </Auth0Provider>
   </React.StrictMode>,
 )
