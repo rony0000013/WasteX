@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import ErrorPage from './components/ErrorPage.jsx'
 import { Auth0Provider } from '@auth0/auth0-react'
 import Blog from './components/Blog.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -9,16 +10,19 @@ import CamPage from './components/CamPage.jsx'
 const router = createBrowserRouter([
   {
       path: '/',
+      errorElement: <ErrorPage />,
       element: (
         <App/>
       ),
   },
   {
     path: '/blog',
+    errorElement: <ErrorPage />,
     element:<Blog />
   },
   {
     path: '/chat',
+    errorElement: '<ErrorPage />',
     element:(<div className='w-screen h-screen bg-primary'>
       <frameset>
     <frame src='https://wastex-chat.streamlit.app/?embed=True'/>
@@ -27,6 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/camera',
+    errorElement: <ErrorPage />,
     element:<CamPage/>
   },
 ]);
