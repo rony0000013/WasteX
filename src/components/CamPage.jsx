@@ -55,9 +55,13 @@ const CamPage = () => {
               })
               .then((res) => {
                 console.log(res.data);
+                if (res.data.result === true){
+                    setAns(() => "Successfully Inforemed")
+                  }
               })
               .catch((err) => {
                 console.log(err);
+                setAns("Error Occured")
               });
         }
       }
@@ -81,14 +85,12 @@ const CamPage = () => {
             })
             .then((res) => {
               console.log(res.data);
-              if (res.data.result === true){
-                setAns(() => "Successfully Inforemed")
-              }
+              
 
             })
             .catch((err) => {
               console.log(err);
-              setAns("Error Occured")
+              
             });
         }
       };
@@ -113,8 +115,8 @@ const CamPage = () => {
             <button onClick={uploadImage} className="btn btn-success">
                 Upload photo
             </button>
+            <h1 className="text-3xl text-green-700">{ans}</h1>
         </div>
-        <h1>{ans}</h1>
         </div>
         </>
     );
