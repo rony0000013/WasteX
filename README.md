@@ -40,6 +40,10 @@ GET /blogs: Retrieves blog data from MongoDB.
 POST /check/: Accepts an image and coordinates, performs garbage detection, and records location if necessary.
 POST /check_once/: Accepts coordinates and records location without image detection.
 
+## Link to our chat and backend Repositories
+1. [Backend Repo](https://github.com/Koustavjr/WasteX_Backend)
+2. [Chat Repo](https://github.com/Koustavjr/WasteX_Chat)
+## ScreenShots Of our Website
 
 ## Conclusion 🏁
 WasteX leverages cutting-edge technologies to mitigate improper waste disposal. By combining AI-based image detection with accurate location tracking, the system contributes to creating a cleaner and healthier environment. The frontend offers an intuitive interface for users to interact with the system seamlessly. Through this solution, we aim to promote responsible waste management practices and drive positive environmental change.
