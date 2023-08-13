@@ -19,7 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/chat',
-    element:<iframe src="https://wastex-chat.streamlit.app/?embed_options=dark_theme,show_colored_line,show_footer"></iframe>
+    element:(<div className='w-screen h-screen bg-primary'>
+      <frameset>
+    <frame src='https://wastex-chat.streamlit.app/?embed=True'/>
+  </frameset>
+    </div>)
   },
   {
     path: '/camera',
