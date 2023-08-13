@@ -22,8 +22,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/chat',
-    errorElement: '<ErrorPage />',
+    errorElement: <ErrorPage />,
     element:(<div className='w-screen h-screen bg-primary'>
+      <div className='align-middle flex flex-wrap justify-center gap-4 bg-primary'>
+            <a className="Btn" href="/"><button className='btn btn-success '>
+                Go back to home
+        </button></a>
+        </div>
       <frameset>
     <frame src='https://wastex-chat.streamlit.app/?embed=True'/>
   </frameset>

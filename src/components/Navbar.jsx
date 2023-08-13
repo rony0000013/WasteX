@@ -26,15 +26,12 @@ const Navbar = () => {
           >
             <a href="#features">Features</a>
           </li>
-          <li
+          <a href="/blog"><li
             key="blog"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white `}
-            onClick={() => {
-              navigate("/blog");
-            }}
           >
             Blog
-          </li>
+          </li></a>
           <li
             key="Log In"
             className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}
@@ -70,15 +67,12 @@ const Navbar = () => {
               >
                 <a href="#features">Features</a>
               </li>
-              <li
+              <a href="/blog"><li
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white `}
-                onClick={() => {
-                  window.location.href = "/blog";
-                }}
               >
                 Blog
-              </li>
+              </li></a>
               <li
                 key="blog"
                 className={`font-poppins font-normal cursor-pointer text-[16px] mr-0 text-white `}

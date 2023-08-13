@@ -28,9 +28,9 @@ const Hero = () => (
       </p>
       </div>
       <div className="ss:flex hidden md:mr-4 mr-0 mt-4">
-        <button className="btn btn-active btn-success">AI Help</button>
+        <a href="/chat"><button className="btn btn-active btn-success" >AI Help</button></a>
         <div className="ml-4">
-          <button className="btn btn-active btn-success">Get Started</button>
+        <a href="/camera"><button className="btn btn-active btn-success">Get Started</button></a>
         </div>
       </div>
     </div>
@@ -43,9 +43,9 @@ const Hero = () => (
     </div>
 
     <div className={`ss:hidden ${styles.flexCenter}`}>
-      <button className="btn btn-active btn-success">AI Help</button>
+    <a href="/chat"><button className="btn btn-active btn-success">AI Help</button></a>
       <div className="ml-4">
-        <button className="btn btn-active btn-success">Get Started</button>
+      <a href="/camera"><button className="btn btn-active btn-success">Get Started</button></a>
       </div>
     </div>
   </section>

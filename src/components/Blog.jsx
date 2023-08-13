@@ -28,6 +28,11 @@ export default function Blog() {
 
     return (
         <>
+        <div className='align-middle flex flex-wrap justify-center gap-4 bg-primary'>
+            <a className="Btn" href="/"><button className='btn btn-success '>
+                Go back to home
+        </button></a>
+        </div>
             <div className="bg-primary flex flex-wrap align-middle w-[100vw]  p-4 justify-center gap-4">
                <For each={blogs}>
                 {(item, idx) =>
